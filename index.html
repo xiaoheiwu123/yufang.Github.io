@@ -111,7 +111,7 @@
     function getMonthAndDay() {//获取当前时间
         var date = new Date();
         var month = date.getMonth() + 1<10? "0"+(date.getMonth() + 1):date.getMonth() + 1;
-        var strDate = date.getDate();
+        var strDate = date.getDate() + 1<10? "0"+(date.getDate() + 1):date.getDate() + 1;
         var currentdate = month  + "月" + strDate +"日";
         //return currentdate;
         document.getElementById("demo2").innerHTML = currentdate;
@@ -202,7 +202,7 @@ span2.innerHTML = "部门：电气工程与自动化学院";
                   var days = a-b;
                   var i=parseInt((days/(24*60*60*1000))%16);
 
-                    var arr = ["公正", "法治", "爱国", '敬业', "诚信", "友善","明德", "至诚", "博学", "远志","富强", "民主", "文明", "和谐", "自由", "平等"];
+                    var arr = ["敬业", "诚信", "友善","明德", "至诚", "博学", "远志","富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国"];
 
 
                     var marq = document.getElementById("marqueeStr");
